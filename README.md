@@ -1,9 +1,35 @@
-**This repo is supposed to be used as config by NvChad users!**
+# nvimfiles
 
-- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
-- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
-- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
+Personal Neovim configuration for `guerrerocarlos`, based on NvChad and tuned for a VSCode-to-Neovim workflow.
 
-# Credits
+## Install
 
-1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
+```bash
+git clone https://github.com/guerrerocarlos/nvimfiles.git ~/.config/nvim
+nvim
+```
+
+Inside Neovim, run `:MasonInstallAll` to install the configured language servers and formatters.
+
+## Familiar Shortcuts
+
+- `Ctrl+s`: save
+- `Ctrl+p`: find files
+- `Ctrl+Shift+p` or `Space Space`: command palette
+- `Ctrl+Shift+f`: search in files
+- `Space e`: file explorer
+- `Ctrl+\`` or `Space tt`: terminal
+- `F2`: rename symbol
+- `Ctrl+.` or `Space ca`: code action
+- `F12`: go to definition
+- `Shift+F12`: find references
+- `F8` / `Shift+F8`: next / previous diagnostic
+- `Space xx`: problems list
+- `Space cf`: format file
+- `Space gs`: Git status
+
+Some Ctrl/Shift combinations depend on the terminal emulator. The leader-key alternatives are kept as reliable fallbacks.
+
+## Notes
+
+Format-on-save is intentionally conservative. It only runs for configured filetypes when the matching formatter is available globally or in the current project's `node_modules/.bin`.

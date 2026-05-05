@@ -1,6 +1,18 @@
 require "nvchad.options"
 
--- add yours here!
+local o = vim.o
+local opt = vim.opt
 
--- local o = vim.o
--- o.cursorlineopt ='both' -- to enable cursorline!
+o.confirm = true
+o.inccommand = "split"
+o.scrolloff = 8
+o.sidescrolloff = 8
+o.cursorlineopt = "both"
+
+opt.completeopt = { "menu", "menuone", "noselect" }
+opt.list = true
+opt.listchars = {
+  tab = "> ",
+  trail = ".",
+  nbsp = "+",
+}
