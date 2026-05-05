@@ -33,3 +33,5 @@ Some Ctrl/Shift combinations depend on the terminal emulator. The leader-key alt
 ## Notes
 
 Format-on-save is intentionally conservative. It only runs for configured filetypes when the matching formatter is available globally or in the current project's `node_modules/.bin`.
+
+NvimTree opens automatically when Neovim starts. When opening a file directly, the explorer follows that file while focus stays in the editor.

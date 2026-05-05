@@ -33,3 +33,20 @@ vim.api.nvim_create_autocmd("BufReadPost", {
     end
   end,
 })
+
+vim.api.nvim_create_autocmd("VimEnter", {
+  group = group,
+  callback = function()
+    vim.schedule(function()
+      local ok, api = pcall(require, "nvim-tree.api")
+      if not ok then
+        return
+      end
+
+      api.tree.open {
+        find_file = true,
+        focus = vim.fn.argc(-1) == 0,
+      }
+    end)
+  end,
+})
