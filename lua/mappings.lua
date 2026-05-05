@@ -29,8 +29,7 @@ map({ "n", "t" }, "<leader>tt", vscode.toggle_terminal, { desc = "Toggle termina
 
 map("n", "<C-Tab>", vscode.next_buffer, { desc = "Next buffer" })
 map("n", "<C-S-Tab>", vscode.prev_buffer, { desc = "Previous buffer" })
-map("n", "<M-w>", vscode.close_buffer, { desc = "Close buffer" })
-map("i", "<M-w>", function()
+map("i", "<C-w>", function()
   vim.cmd "stopinsert"
   vim.schedule(vscode.close_buffer)
 end, { desc = "Close buffer" })

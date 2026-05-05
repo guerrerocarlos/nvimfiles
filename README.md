@@ -74,12 +74,12 @@ Buffers are the open files inside Neovim.
 | --- | --- |
 | `Ctrl+Tab` | Next buffer |
 | `Ctrl+Shift+Tab` | Previous buffer |
-| `Option+w` / `Alt+w` | Close current buffer |
+| `Ctrl+w` in insert mode | Close current buffer |
 | `Space bd` | Close current buffer |
 | `Tab` | Next buffer, from NvChad tabufline |
 | `Shift+Tab` | Previous buffer, from NvChad tabufline |
 
-`Option+w` requires your terminal to send Option as Meta or Alt.
+`Option+w` is intentionally not used because many terminals send it as a typed character instead of a shortcut.
 
 ## Code Intelligence
 
