@@ -187,10 +187,20 @@ The footer/statusline shows the current Git branch as `git:<branch>` when the cu
 
 - Yanked text is briefly highlighted.
 - External file changes are checked when Neovim regains focus or a terminal closes.
+- Persistent undo is enabled, with undo history stored in Neovim's state directory.
 - Terminals hide line numbers and signs.
 - Neovim restores the last cursor position when reopening a file.
 - Search and substitute previews use `inccommand=split`.
 - The cursor keeps context with `scrolloff=8`.
+
+Undo settings:
+
+| Option | Value |
+| --- | --- |
+| `undofile` | Enabled |
+| `undodir` | `stdpath("state")/undo` |
+| `undolevels` | `10000` |
+| `undoreload` | `50000` |
 
 ## Discoverability
 
