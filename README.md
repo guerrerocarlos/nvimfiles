@@ -10,6 +10,7 @@ nvim
 ```
 
 Inside Neovim, run `:MasonInstallAll` to install the configured language servers and formatters.
+Until those tools are installed, missing language servers are skipped so startup stays quiet.
 
 ## Familiar Shortcuts
 
