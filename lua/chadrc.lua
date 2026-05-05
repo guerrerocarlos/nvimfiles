@@ -27,6 +27,16 @@ M.mason = {
   },
 }
 
+M.ui = {
+  statusline = {
+    modules = {
+      git = function()
+        return require("statusline").git_branch()
+      end,
+    },
+  },
+}
+
 -- M.nvdash = { load_on_startup = true }
 -- M.ui = {
 --       tabufline = {

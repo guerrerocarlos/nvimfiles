@@ -161,6 +161,8 @@ Disable autoformat for the current buffer:
 
 Git commands are powered by Fugitive.
 
+The footer/statusline shows the current Git branch as `git:<branch>` when the current file or working directory is inside a Git repository.
+
 ## Editing Comfort
 
 - Yanked text is briefly highlighted.
