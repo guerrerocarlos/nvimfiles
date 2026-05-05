@@ -29,6 +29,26 @@ That installs the configured language servers and formatters. Until those tools 
 
 Some Ctrl/Shift combinations depend on the terminal emulator. The leader-key alternatives below are kept as reliable fallbacks.
 
+## Movement
+
+These are standard Neovim normal-mode motions.
+
+| Command | Action |
+| --- | --- |
+| `gg` | Move cursor to the first line |
+| `42G` | Move cursor to line 42; replace `42` with any line number |
+| `G` | Move cursor to the last line |
+| `Ctrl+f` | Move forward one full page |
+| `Ctrl+b` | Move backward one full page |
+| `Ctrl+u` | Move up half a page |
+| `Ctrl+d` | Move down half a page |
+| `zt` | Move the screen so the cursor line is at the top |
+| `zb` | Move the screen so the cursor line is at the bottom |
+| `zz` | Center the screen on the cursor |
+| `ZZ` | Save the current file and quit |
+
+Be careful with `ZZ`: it writes the file before closing the window.
+
 ## Files And Search
 
 | VSCode habit | Neovim mapping | Action |
