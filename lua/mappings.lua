@@ -21,6 +21,8 @@ map("n", "<leader>fb", vscode.buffers, { desc = "Open buffers" })
 map("n", "<leader>fr", vscode.recent_files, { desc = "Recent files" })
 
 map("n", "<leader>e", vscode.explorer_toggle, { desc = "Explorer" })
+map({ "n", "i", "t" }, "<C-<>", vscode.toggle_terminal, { desc = "Toggle terminal" })
+map({ "n", "i", "t" }, "<C-,>", vscode.toggle_terminal, { desc = "Toggle terminal" })
 map({ "n", "t" }, "<C-`>", vscode.toggle_terminal, { desc = "Toggle terminal" })
 map({ "n", "t" }, "<leader>`", vscode.toggle_terminal, { desc = "Toggle terminal" })
 map({ "n", "t" }, "<leader>tt", vscode.toggle_terminal, { desc = "Toggle terminal" })

@@ -56,12 +56,15 @@ NvimTree opens automatically when Neovim starts.
 
 | Mapping | Action |
 | --- | --- |
+| `Ctrl+<` | Toggle floating terminal |
 | `Ctrl+backtick` | Toggle floating terminal |
 | `Space backtick` | Toggle floating terminal |
 | `Space tt` | Toggle floating terminal |
 | `Ctrl+g` in terminal | Leave terminal input mode |
 | `jk` in terminal | Leave terminal input mode |
 | `Esc Esc` in terminal | Leave terminal input mode |
+
+`Ctrl+<` is also bound as `Ctrl+,` because many terminals report the shifted `<` key that way.
 
 ## Buffers
 
