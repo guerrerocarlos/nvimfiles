@@ -74,12 +74,22 @@ Buffers are the open files inside Neovim.
 | --- | --- |
 | `Ctrl+Tab` | Next buffer |
 | `Ctrl+Shift+Tab` | Previous buffer |
-| `Ctrl+w` in insert mode | Close current buffer |
 | `Space bd` | Close current buffer |
 | `Tab` | Next buffer, from NvChad tabufline |
 | `Shift+Tab` | Previous buffer, from NvChad tabufline |
 
 `Option+w` is intentionally not used because many terminals send it as a typed character instead of a shortcut.
+
+Standard Neovim buffer commands:
+
+| Command | Action |
+| --- | --- |
+| `:ls` | List open buffers |
+| `:bd` or `:bdelete` | Delete the current buffer |
+| `:bd!` | Force-delete the current buffer, discarding unsaved changes |
+| `:bnext` or `:bn` | Go to the next buffer |
+| `:bprevious` or `:bp` | Go to the previous buffer |
+| `:buffer 3` or `:b 3` | Switch to buffer number 3 |
 
 ## Code Intelligence
 
