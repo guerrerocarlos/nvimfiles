@@ -182,6 +182,7 @@ Disable autoformat for the current buffer:
 Git commands are powered by Fugitive.
 
 The footer/statusline shows the current Git branch as `git:<branch>` when the current file or working directory is inside a Git repository.
+The footer/statusline also shows file progress as `current_line/total_lines percent`, for example `42/300 14%`.
 
 ## Editing Comfort
 

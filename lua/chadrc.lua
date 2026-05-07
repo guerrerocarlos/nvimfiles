@@ -33,6 +33,9 @@ M.ui = {
       git = function()
         return require("statusline").git_branch()
       end,
+      cursor = function()
+        return require("statusline").cursor_progress()
+      end,
     },
   },
 }

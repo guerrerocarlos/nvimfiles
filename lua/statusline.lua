@@ -85,4 +85,12 @@ function M.git_branch()
   return "%#St_gitIcons# git:" .. statusline_escape(branch) .. " "
 end
 
+function M.cursor_progress()
+  local line = vim.fn.line "."
+  local total = vim.fn.line "$"
+  local percent = math.floor((line / math.max(total, 1)) * 100)
+
+  return string.format("%%#St_pos_sep#%%#St_pos_icon# %%#St_pos_text# %d/%d %d%%%% ", line, total, percent)
+end
+
 return M
